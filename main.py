@@ -139,11 +139,11 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
                 cv2.putText(image, f'Left Movement: {left_movement}', (10, 70),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
-                cv2.putText(image, f'Right Reps: {right_pushdowns_rep_count}', (10, 90),
+                cv2.putText(image, f'Right Reps: {right_curls_rep_count}', (10, 90),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                cv2.putText(image, f'Left Reps: {left_pushdowns_rep_count}', (10, 110),
+                cv2.putText(image, f'Left Reps: {right_curls_rep_count}', (10, 110),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                cv2.putText(image, f'Min Reps: {min_rep_count}', (10, 130),
+                cv2.putText(image, f'Min Reps: {min_curls_rep_count}', (10, 130),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
 
             if choice == "squats":
